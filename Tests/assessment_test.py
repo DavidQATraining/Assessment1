@@ -22,19 +22,19 @@ from Code import python1
 #     assert python1.three(8) == "null"
 #     assert python1.three(75) == "fizzbuzz"
 
-def test_four():
-    assert python1.four("55 72 86") == 14
-    assert python1.four("15 72 80 164") == 11
-    assert python1.four("555 72 86 45 10") == 15
-    assert python1.four("98 63 34 1 13") == 17
-    assert python1.four("98 107 415") == 17
+# def test_four():
+#     assert python1.four("55 72 86") == 14
+#     assert python1.four("15 72 80 164") == 11
+#     assert python1.four("555 72 86 45 10") == 15
+#     assert python1.four("98 63 34 1 13") == 17
+#     assert python1.four("98 107 415") == 17
 
-# def test_five():
-#     assert python1.five("Jeff,random.py,False,1445") == ["Jeff"]
-#     assert python1.five("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445") == ["Jeff"]
-#     assert python1.five("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") == ["Bert","Jeff"]
-#     assert python1.five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") == ["Bert","Jeff"]
-#     assert python1.five("Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445") == []
+def test_five():
+    assert python1.five("Jeff,random.py,False,1445") == ["Jeff"]
+    assert python1.five("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445") == ["Jeff"]
+    assert python1.five("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") == ["Bert","Jeff"]
+    assert python1.five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") == ["Bert","Jeff"]
+    assert python1.five("Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445") == []
 #
 # def test_six():
 #     assert python1.six("ceiling") == True

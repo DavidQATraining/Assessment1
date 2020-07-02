@@ -185,7 +185,28 @@ def four(arg1):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
-	return []
+	mylist = input.split(",")
+	listOfNames = []
+
+	def splitList(l, n):
+		# looping till length l
+		for i in range(0, len(l), n):
+			yield l[i:i + n]
+
+	# How many elements each
+	# list should have
+	n = 4
+
+	x = list(splitList(mylist, n))
+
+	for inlist in mylist:
+		for check in inlist:
+			if inlist[2] == "False":
+				listOfNames.append(inlist[0])
+	listTuple = (listOfNames)
+	listOfNames = listTuple
+
+	return [listOfNames]
 
 	# <QUESTION 6>
 
