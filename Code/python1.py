@@ -124,7 +124,8 @@ def three(arg1):
 
 	# <QUESTION 4>
 
-    # Given a string seperate the string into the individual numbers present, then add each digit of each number to get a final value for each number
+    # Given a string seperate the string into the individual numbers present,
+	# then add each digit of each number to get a final value for each number
 
 	# String example = "55 72 86"
 	
@@ -145,7 +146,18 @@ def three(arg1):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-	return 0
+	numlist = arg1.split()
+
+	for i in range(len(numlist)):
+		curBig = 0
+		numAdd = ((numlist[i]).split())
+		for n in range(0, len(numAdd)):
+			numAdd[n] = int(numAdd[n])
+		newBig = sum(numAdd)
+		if newBig > curBig:
+			curBig = newBig
+
+		return curBig
 
 	# <QUESTION 5>
 
