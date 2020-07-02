@@ -110,7 +110,16 @@ def two(input1):
 	# No Hints for this question
 
 def three(arg1):
-	return "null"
+	string1 = ""
+	if arg1 % 15 == 0:
+		string1 = "fizzbuzz"
+	elif arg1 % 3 == 0:
+		string1 = "fizz"
+	elif arg1 % 5 == 0:
+		string1 = "buzz"
+	else:
+		string1 = "null"
+	return string1
 
 
 	# <QUESTION 4>
