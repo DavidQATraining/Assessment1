@@ -8,12 +8,12 @@ from Code import python1
 #     assert python1.one("echo", "print") == "print"
 #     assert python1.one("fire","rib") == "fire"
 
-# def test_two():
-#     assert python1.two("bertclivebert") == "clive"
-#     assert python1.two("xxbertfridgebertyy") == "fridge"
-#     assert python1.two("xxBertfridgebERtyy") == "fridge"
-#     assert python1.two("xxbertyy") == ""
-#     assert python1.two("xxbeRTyy") == ""
+def test_two():
+    assert python1.two("bertclivebert") == "clive"
+    assert python1.two("xxbertfridgebertyy") == "fridge"
+    assert python1.two("xxBertfridgebERtyy") == "fridge"
+    assert python1.two("xxbertyy") == ""
+    assert python1.two("xxbeRTyy") == ""
 
 # def test_three():
 #     assert python1.three(3) == "fizz"
@@ -29,12 +29,12 @@ from Code import python1
 #     assert python1.four("98 63 34 1 13") == 17
 #     assert python1.four("98 107 415") == 17
 
-def test_five():
-    assert python1.five("Jeff,random.py,False,1445") == ["Jeff"]
-    assert python1.five("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445") == ["Jeff"]
-    assert python1.five("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") == ["Bert","Jeff"]
-    assert python1.five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") == ["Bert","Jeff"]
-    assert python1.five("Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445") == []
+# def test_five():
+#     assert python1.five("Jeff,random.py,False,1445") == ["Jeff"]
+#     assert python1.five("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445") == ["Jeff"]
+#     assert python1.five("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") == ["Bert","Jeff"]
+#     assert python1.five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") == ["Bert","Jeff"]
+#     assert python1.five("Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445") == []
 #
 # def test_six():
 #     assert python1.six("ceiling") == True

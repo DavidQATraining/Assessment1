@@ -243,8 +243,14 @@ def six(input):
 
 	# How do we ignore case in a String? help(str) may offer some insight.
 
-def seven(input):
-    return 0
+def seven(input1):
+	word = input1.lower()
+	vCount = 0
+	for char in word:
+		if char in "aeiou":
+			vCount += 1
+
+	return vCount
 
 	# <QUESTION 8>
 
