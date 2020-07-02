@@ -144,7 +144,7 @@ def three(arg1):
 	# <HINT>
 
 	# help(int) for working with numbers and help(str) for working with Strings.
-
+# DOESNT WORK BUT THINK I'M CLOSE
 def four(arg1):
 	numlist = arg1.split()
 
@@ -183,7 +183,7 @@ def four(arg1):
 	# Dont't forget, False is a String, not a Boolean value in the Tests above.
 
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
-
+# DOESNT WORK BUT THINK I'M CLOSE
 def five(input):
 	mylist = input.split(",")
 	listOfNames = []
